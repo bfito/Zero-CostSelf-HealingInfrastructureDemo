@@ -65,8 +65,7 @@ resource "aws_cloudwatch_metric_alarm" "phoenix_breach_alarm" {
   namespace= "AWS/EC2"
   period= "60"
   statistic= "Average"
-  threshold
-  = var.alarm_threshold
+  threshold = var.alarm_threshold
   alarm_description = "This alarm monitors CPU utilization for Phoenix demo"
 
   dimensions = {
